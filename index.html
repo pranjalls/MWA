@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Details </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3715e2b643.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="pps.png" alt="Mycompany" height="50px" width="50px">
+      </div>
+      <ul>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">About Us</a></li>
+        <li class="item"><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <table>
+      <tr><td>
+    <div class="container-left">
+      <h1>Looking for a perfect job?</h1>
+      <h2>We are hiring!</h2>
+    </div></td>
+    <td>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h1>RECRUITMENT FORM</h1>
+          </div><br>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                  onkeydown="return/[a-zA-Z]/i.test(event.key)"
+                />
+              </div><br>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                  onkeydown="return/[a-zA-Z]/i.test(event.key)"
+                />
+              </div><br>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div><br>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div><br>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+              </div><br>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                  pattern="[0-9]{10}"
+                  minlength="10"
+                  onkeydown="return/[0-9]/i.test(event.key)"
+                />
+              </div><br>
+              <div class="form-group">
+                <label for="position">Current working position</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="position"
+                  name="position"
+                />
+              </div><br>
+              <div class="form-group">
+                <label for="experience">No. of years of Experience</label>
+                <input
+                  type="number="
+                  class="form-control"
+                  id="experience"
+                  name="experience"
+                />
+              </div><br>
+              <input type="submit" class="btn btn-primary" value="submit"/><br><br>
+            
+            </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <i class="ffa fa-brands fa-twitter"></i>
+      <i class="ffa fa-brands fa-facebook"></i>
+      <i class="ffa fa-brands fa-instagram"></i>
+      <i class="ffa fa-solid fa-envelope"></i>
+          <p class="done">© Copyright PPS</p>
+      
+        </footer>
+      
+  </body>
+</html>
